@@ -1,304 +1,266 @@
-body{
-	background-color: white;
-	margin: 0px;
+body {
+  background-color: white;
+  margin: 0;
 }
 
+/* Main container */
+.container {
+  width: 70%;
+}
+
+/* Page wrapper */
 #page-wrapper {
   width: 960px;
   margin: 0 auto;
-  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1); 
-  border-radius: 12px 12px 0px 0px; 
-  float: middle;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 1);
+  border-radius: 12px 12px 0 0;
   background-color: #839ccc;
 }
 
+/* Sidebars */
 aside {
-	float: left;
-	width: 10%;
-	background-color: #5a6c81;
+  float: left;
+  width: 10%;
+  background-color: #5a6c81;
 }
 
 asides {
-	float: left;
-	width: 10%;
-	background-color: #d7f9f8;
+  float: left;
+  width: 10%;
+  background-color: #d7f9f8;
 }
 
-nav a {
-  padding: 10px;
-  margin: 10px;
-}
+/* Navigation */
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
-} 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #292929;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+/* Text styling */
+h1, h2 {
+  font-family: "Alfa Slab One", serif;
+  color: #cdd7e5;
+}
+
+h3 {
+  font-family: "Tulpen One", sans-serif;
+  color: #cdd7e5;
+}
+
+h4 {
+  font-family: "Zain", sans-serif;
+  color: #cdd7e5;
+}
+
+h5, h6 {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  color: #cdd7e5;
+}
+
+p {
+  font-family: fantasy;
+  font-weight: 200;
+  color: #cdd7e5;
 }
 
 li {
-  float: left;
+  font-family: monospace;
+  font-weight: 300;
+  color: #cdd7e5;
 }
 
-li a {
+/* Address */
+address {
+  font-family: "Monsieur La Doulaise", cursive;
+  color: #cdd7e5;
+}
+
+/* Default links */
+a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
+  width: 6em;
+  margin: 0 5px;
+  padding: 0.1em 1em;
   text-decoration: none;
+  text-align: center;
+  color: #d7f9f8;
+  background-color: #d6e6ff;
+  border: 2px solid;
+  border-radius: 6px;
+  text-shadow: #666 0.1em 0.1em 0.1em;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: background-color 2.2s, border-color 0.2s, top 0.2s, box-shadow 0.2s;
 }
 
-li a:hover {
-  background-color: #5a6c81;
-  color: #92a0b2;
+a:hover, a:focus {
+  background-color: #fbe0e0;
+  border-color: #e5d4ef;
 }
 
+a:active {
+  top: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Special "smooth" button */
+a.smooth {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 0 0 50px 0;
+  width: 10em;
+  border-radius: 1.5em;
+  color: #003f5c;
+  background-color: #ffadad;
+  transition-property: background-color, width, border-radius;
+  transition-duration: 1s, 3s, 2s;
+}
+
+a.smooth:hover,
+a.smooth:focus {
+  background-color: blue;
+  width: 15em;
+  border-radius: 0;
+}
+
+/* Animation */
+@-webkit-keyframes colors {
+  0% { background-color: red; }
+  20% { background-color: orange; }
+  40% { background-color: yellow; }
+  60% { background-color: green; }
+  80% { background-color: blue; }
+  100% { background-color: purple; }
+}
+
+@keyframes colors {
+  0% { background-color: red; }
+  20% { background-color: orange; }
+  40% { background-color: yellow; }
+  60% { background-color: green; }
+  80% { background-color: blue; }
+  100% { background-color: purple; }
+}
+
+#magic {
+  width: 200px;
+  height: 200px;
+  animation-name: colors;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Footer */
 #footer {
   background-color: #5a6c81;
   height: 100px;
   clear: both;
 }
 
-h3 {
-  font-family: "Tulpen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #cdd7e5; 
-}
-
-h4 {
-  font-family: "Zain", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  color: #cdd7e5;
-}
-
-h5, h6 {
-  font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #cdd7e5; 
-}
-
-header {
-  float: left;
-  
-}
-
-h1, h2 {
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #cdd7e5; 
-}
-
-li {
-	font-family: monospace;
-	font-weight: 300;
-	color: #cdd7e5;
-}
-
-p {
-	font-family: fantasy;
-	font-weight: 200;
-	color: #cdd7e5;  
-}
-
-address {
-  font-family: "Monsieur La Doulaise", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: #cdd7e5;  
-
-}
-
-a {
-	display: block;
-	width: 6em;
-	margin: 0 5px;
-	padding: .1em 1em;
-	text-decoration: none;
-	text-align: center;
-	color: #d7f9f8;
-	background-color: #d6e6ff;
-	border: 2px solid;
-	border-radius: 6px;
-	text-shadow: #666 .1em .1em .1em;
-	box-shadow: 0 5px, 3px,;
-	position: relative;
-	
-	transition: background-color 2.2s, boarder-color 0.2s, top .2s, box-shadow 0.2s;
-}
-
-a:hover, a:focus {
-	background-color: #fbe0e0;
-	border-color: #e5d4ef;
-}
-
-a:active {
-	top: 3px;
-	box-shadow: 0 1px 2px (0,0,0,.5);
-}
-
-a.smooth {
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	padding: 1em 2em;
-	margin: 0 0 50px 0;
-	width: 10em;
-	border-radius: 1.5em;
-	color: #003f5c;
-	background-color: #ffadad;
-	
-	transition-property: background-color, width, boarder-radius;
-	transition-duration: 1s, 3s, 2s;
-}
-
-s.smooth:hover, a.smooth:focus {
-	background-color: blue;
-	width: 15em;
-	border-radius: 0;
-}
-
-@-webkit-keyframes colors{
-	0% (background-color: red;)
-	20% (background-color: orange;)
-	40% (background-color: yellow;)
-	60% (background-color: green;)
-	80% (background-color: blue;)
-	100% (background-color: purple;)
-} 
-
-@keyframe color {
-	0% (background-color: red;)
-	20% (background-color: orange;)
-	40% (background-color: yellow;)
-	60% (background-color: green;)
-	80% (background-color: blue;)
-	100% (background-color: purple;)
-}
-
-#magic {
-	width: 200px;
-	height: 200px;
-	-webkit-animation-name:colors;
-	-webkit-animation-duration: 5s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinate;
-	-webkit-animation-direction: alternate;
-	animation-name: colors; 
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-direction; alternate;
-}
-
-img1, img2, img3 {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-img1, img2, img3{
+/* Image styling */
+#img1, #img2, #img3 {
   display: block;
-  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
-img1, img2, img3 {
+#img1:hover, #img2:hover, #img3:hover {
   transform: scale(1.1) rotate(5deg);
   filter: brightness(1.2) contrast(1.1);
-  resize: 20%;
 }
 
-/* Fluid page */
-
+/* Responsive media queries */
 @media screen and (max-width: 768px) {
-	#featured li {
-		width: 46%;
-	}
+  #featured li {
+    width: 46%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-	#featured li {
-		width: 10%;
-	}
-	.nav a {
-		padding: 0.6315789474em;
-	}
+  #featured li {
+    width: 10%;
+  }
+
+  nav a {
+    padding: 0.6315789474em;
+  }
 }
 
 @media screen and (min-width: 58.125em) {
-	html{
-		padding: 0;
-	}
-	header,
-	footer,
-	.primary,
-	#instructor,
-	#links {
-		padding-right: 20%;
-		padding-left: 20%;
-	}
+  html {
+    padding: 0;
+  }
 
-nav {
-	width: 60%;
-	float: center;
+  header,
+  footer,
+  .primary,
+  #instructor,
+  #links {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  nav {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .preview {
+    margin-left: 50%;
+    margin-right: -16.6666667%;
+    padding-right: 16.6666667%;
+  }
+
+  li.meeting {
+    width: 45%;
+    padding-right: 5%;
+    padding-bottom: 1.2631578947em;
+  }
+
+  .assigned {
+    clear: both;
+  }
+
+  .link-group {
+    left: 50%;
+    width: 30%;
+  }
+
+  #essential-reference {
+    width: 35%;
+  }
 }
 
-.preview {
-	margin-right: -16.6666667%;
-	padding-right: 16.6666667%;
-	margin-left: -50%;
-	margin-left: 50%;
-
-}
-
-li.meeting {
-	float: center;
-	width: 45%;
-	padding-right: 5%;
-	padding-bottom: 1.2631578947em;
-}
-
-.assigned {
-	clear: both;
-}
-
-.link-group {
-	left: 50%;
-	width: 30%;
-}
-
-#essential-reference {
-	width: 35%;
-}
-}
-
-/* Fluid page layout*/
+/* Layout boxes */
 .rectangle {
-	width: 20%;
-	margin: 0 auto;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .box {
-	width: 80%;
-	float: center;
-	padding: 10px;
-	box-sizing: border-box;
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-/* CSS for a fixed page layout */
-
-.container {
-  width: 70%; 
+#map {
+  height: 100%;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }

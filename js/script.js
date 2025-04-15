@@ -1,4 +1,13 @@
-  const marker = new AdvancedMarkerElement({
+  function initMap(){
+  var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 41, lng: -87},
+      zoom: 10
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initMap);
+
+const marker = new AdvancedMarkerElement({
       map,
       position: { lat: 41, lng: -87 },
 	  title: "Illinois Tech",
