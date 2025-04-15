@@ -31,7 +31,8 @@ asides {
 nav ul {
   display: flex;
   flex-direction: row;
-  justified-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
 } 
 
 ul {
