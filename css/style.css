@@ -32,7 +32,6 @@ nav ul {
   display: flex;
   flex-direction: row;
   justified-content: center;
-  align-items: space-between;
 } 
 
 ul {
