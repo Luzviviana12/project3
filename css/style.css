@@ -29,28 +29,29 @@ asides {
 }
 
 
-nav ul {
+ul {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  background-color: #292929;
 }
 
-nav a {
-	color: white;
-	text-decoration: none;
-	padding: 15px;
-	display: block;
-	text-align: center;
+li {
+  float: left;
 }
 
-nav a:hover {
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+li a:hover {
   background-color: #5a6c81;
   color: #92a0b2;
-}
-
-nav ul li a{
-	float: middle;
 }
 
 #footer {
