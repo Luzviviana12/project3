@@ -18,7 +18,7 @@ main {
 
 aside {
 	float: left;
-	width: 27%;
+	width: 15%;
 	background-color: #5a6c81;
 }
 
@@ -209,6 +209,7 @@ img1, img2, img3{
 img1, img2, img3 {
   transform: scale(1.1) rotate(5deg);
   filter: brightness(1.2) contrast(1.1);
+  resize: 20%;
 }
 
 /* Fluid page */
@@ -243,7 +244,7 @@ img1, img2, img3 {
 
 nav {
 	width: 60%;
-	left: 30%;
+	float: center;
 }
 
 .preview {
@@ -266,7 +267,7 @@ li.meeting {
 }
 
 .link-group {
-	left: 30%;
+	left: 50%;
 	width: 30%;
 }
 
