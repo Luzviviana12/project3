@@ -28,6 +28,12 @@ asides {
 	background-color: #d7f9f8;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justified-content: center;
+  align-items: space-between;
+} 
 
 ul {
   list-style-type: none;
