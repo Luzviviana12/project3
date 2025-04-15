@@ -1,6 +1,7 @@
   const marker = new AdvancedMarkerElement({
       map,
       position: { lat: 41, lng: -87 },
+	  title: "Illinois Tech",
   });
 
 
