@@ -299,15 +299,6 @@ li.meeting {
   width: 70%; 
 }
 
-/* Making a fixed navigation*/
-div.fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  border: 3px solid gray;
-}
-
 #device-wrapper {
   width: 360px;
   margin: 0 auto;
