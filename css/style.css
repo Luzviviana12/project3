@@ -24,8 +24,6 @@ asides {
 	background-color: #d7f9f8;
 }
 
-<<<<<<< HEAD
-=======
 nav a {
   padding: 10px;
   margin: 10px;
@@ -37,7 +35,6 @@ nav ul {
   align-items: flex-start;
 } 
 
->>>>>>> 77944730df1393f793bc54abaaf9422573d16d22
 ul {
   list-style-type: none;
   margin: 0;
@@ -206,7 +203,7 @@ s.smooth:hover, a.smooth:focus {
 img1, img2, img3 {
   display: inline-block;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 img1, img2, img3{
@@ -214,7 +211,7 @@ img1, img2, img3{
   transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
   width: 100%;
   max-width: 400px;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 img1, img2, img3 {
