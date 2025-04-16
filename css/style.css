@@ -307,3 +307,11 @@ mobile img {
   }
 }
 
+.slideshow {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.slideshow ul {
+	margin: 0;
+}
