@@ -49,6 +49,7 @@ function init(){
 window.addEventListener('load', init);
 
 $('.bxslider').bxSlider({
+  mode: 'fade'
   adaptiveHeight: true,
   slideWidth: 960
 });
