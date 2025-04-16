@@ -259,8 +259,51 @@ a.smooth:focus {
 #map {
   height: 100%;
 }
-html, body {
+html body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
+mobile body {
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+mobile body {
+    font-size: 14px;
+  }
+}
+
+mobile nav ul {
+  flex-direction: column;
+  align-items: center;
+}
+mobile nav li {
+  width: 100%;
+  text-align: center;
+}
+
+mobile img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.media-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 20px 40px;
+  }
+}
+
